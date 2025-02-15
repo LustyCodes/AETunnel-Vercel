@@ -1,3 +1,7 @@
+export const config = {
+  runtime: "edge", // Required for Edge Functions
+};
+
 export default async function (request) {
   const url = new URL(request.url);
   const targetUrl = url.searchParams.get("url");
